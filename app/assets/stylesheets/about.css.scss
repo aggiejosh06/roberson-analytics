@@ -1,5 +1,26 @@
-.about-content span {
-	font-weight: 700;
+.about-welcome {
+	height: 225px;
+	padding: 30px 0px;
+	line-height: 50px;
+}
+
+.about-welcome h1 {
+	font-size: 4em;
+	font-variant: small-caps;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: #fff;
+	line-height: 2;
+	text-shadow: rgb(51, 51, 51) 1.25px 1.25px 0px;
+}
+
+.about-content {
+	/* background-color: #B4AEA1; */
+	/* border-radius: 5px; */
+	padding: 10px 15px;
+	background-color: #fff;
+	color: black;
 }
 
 .job-list {
@@ -9,4 +30,10 @@
 .job-list > li > p {
 	font-size: 1.5em;
 	font-weight: bold;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }

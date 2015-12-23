@@ -5,7 +5,7 @@ class PagesController < ApplicationController
 	def about		
 	end
 
-	def portfolio
+	def blog
 	end
 
 	def services
