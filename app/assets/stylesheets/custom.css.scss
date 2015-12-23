@@ -56,12 +56,13 @@ article {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	/* background: image-url('cool-background.jpg') no-repeat center center;
+	/* This free background image was from unsplash.com by Steve Richey */
+	background: image-url('bw-building-background.jpg') no-repeat center center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-  	*/
+  	opacity: .70;
 }
 
 /* FOOTER */
