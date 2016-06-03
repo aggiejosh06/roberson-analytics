@@ -4,8 +4,9 @@
 @import "font-awesome";
 
 /* HTML */
-html body {
+body {
 	background-color: #FFF;
+	padding-top: 70px;
 }
 
 p {
@@ -14,11 +15,11 @@ p {
 
 /* NAVIGATION BAR */
 .navbar {
-	margin-bottom: 0px;
-}
+/*	margin-bottom: 0px;
+*/}
 
 .navbar-header {
-	padding-left: 40px;
+	/*padding-left: 40px;*/
 }
 
 .navbar-inverse {
@@ -27,7 +28,7 @@ p {
 }
 
 .navbar-right {
-	margin-right: 60px;
+	/*margin-right: 60px;*/
 }
 
 .navbar-brand {
@@ -63,6 +64,27 @@ article {
   	-o-background-size: cover;
   	background-size: cover;
   	opacity: .70;
+}
+.welcome {
+	height: 225px;
+	padding: 30px 0px;
+	line-height: 50px;
+}
+.welcome-text-area {
+	padding: 5px;
+	background-color: grey;
+	border-radius: 25px;
+	opacity: .95;
+}
+.welcome h1 {
+	font-size: 4em;
+	font-variant: small-caps;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: #fff;
+	line-height: 2;
+	text-shadow: rgb(51, 51, 51) 1.25px 1.25px 0px;
 }
 
 /* FOOTER */
