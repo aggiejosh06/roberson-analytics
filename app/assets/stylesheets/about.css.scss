@@ -23,13 +23,23 @@
 	color: black;
 }
 
-.job-list {
-	list-style: none;
+.panel-body {
+	min-height: 192px;
 }
-
-.job-list > li > p {
-	font-size: 1.5em;
-	font-weight: bold;
+/*.panel-default > .panel-heading {
+	@include gradient-vertical(darken($bg-color, 30%), darken($bg-color, 40%), 0%, 100%);
+	h3 {
+		color: #fff;
+		letter-spacing: 1px;
+	}
+}*/
+.panel {
+	border-radius: 15px;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.panel-heading {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 
 .vcenter {
