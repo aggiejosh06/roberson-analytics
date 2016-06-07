@@ -4,30 +4,38 @@
 		<h1>Contact</h1>
 	</div>
 </div>
-<div class="contacts-content">
+<div class="content">
 	<div class="row">
-		<% flash.each do | key , value | %>
-        	<%= content_tag :div, value, class: "alert alert-#{key} col-md-10 col-md-offset-1" %>
-      	<% end %>
-		<div class="col-md-4 col-md-offset-7 well">
-			<%= form_for @contact do |f| %>
-				<div class="form-group">
-				<%= f.label :name %>
-				<%= f.text_field :name, class: "form-control" %>
-				</div>
+			<% flash.each do | key , value | %>
+	        	<%= content_tag :div, value, class: "alert alert-#{key} col-md-12" %>
+	      	<% end %>
+	</div>
+	<div class="row">
+		      	
+	      	<div class="col-md-7">
+	      		<p>Please provide your name, email, and a brief comment if you would like to recieve a quote on services. Allow up to 48 hours for a response.</p>
 
-				<div class="form-group">	
-				<%= f.label :email %>
-				<%= f.email_field :email, class: "form-control" %>
-				</div>
+	      	</div>
+			<div class="col-md-5 well">
+				<%= form_for @contact do |f| %>
+					<div class="form-group">
+					<%= f.label :name %>
+					<%= f.text_field :name, class: "form-control" %>
+					</div>
 
-				<div class="form-group">
-				<%= f.label :comments %>
-				<%= f.text_area :comments, class: "form-control" %>
-				</div>
+					<div class="form-group">	
+					<%= f.label :email %>
+					<%= f.email_field :email, class: "form-control" %>
+					</div>
 
-				<%= f.submit 'Submit', class: 'btn btn-default' %>
-			<% end %>
-		</div>
+					<div class="form-group">
+					<%= f.label :comments %>
+					<%= f.text_area :comments, class: "form-control" %>
+					</div>
+
+					<%= f.submit 'Submit', class: 'btn btn-default pull-right' %>
+				<% end %>
+			</div>
+			
 	</div>
 </div>
